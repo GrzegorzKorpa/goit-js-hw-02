@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 function formatMessage(message, maxLenght) 
 {const fullMessage = message; 
   const fullMessageLenght = (fullMessage.lenght);
