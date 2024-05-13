@@ -1,12 +1,13 @@
 'use strict';
-function formatMessage(message, maxLenght) 
-{const fullMessage = message; 
-  const fullMessageLenght = (fullMessage.lenght);
-  const sliceMessage = (fullMessage.slice(0, maxLenght)); 
-  if (fullMessageLenght <= maxLenght) {return `{$fullMessage}`;} 
-  else
-  {return (`${sliceMessage}`+`...`);}
+function formatMessage(message, maxLength) {
+  const sliceMessage = message.slice(0, maxLength);
+  if (message.length <= maxLength) {
+    return `${message}`;
+  } else {
+    return `${sliceMessage}` + `...`;
+  }
 }
+ 
 
 
 console.log(formatMessage("Curabitur ligula sapien", 16)); // "Curabitur ligula..."
