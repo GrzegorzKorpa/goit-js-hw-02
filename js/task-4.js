@@ -12,7 +12,9 @@ function getShippingCost(country) {
         case "Australia": price = 170;
             break;
         case "Jamaica": price = 120;
-            break;} {
+            break;
+        default: price = "" } {
+        
         if (countryList.includes(country)) return `Shipping to ${country} will cost ${price} credits`;
         else return `Sorry, there is no delivery to your country`
     }
